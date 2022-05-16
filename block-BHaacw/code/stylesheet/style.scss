@@ -1,0 +1,109 @@
+@import "reset";
+
+// general css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: crimson;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
+  background-color: #3a4a4f;
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  .header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-top: 4px solid #5fb0d5;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      li {
+        font-size: 1.5rem;
+        a {
+          color: #7db7d2;
+        }
+      }
+    }
+  }
+  .main-div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    .item {
+      padding: 0 1.5rem;
+      background-color: #ffffff;
+      border-top: 2px solid #5fb0d5;
+      h2 {
+        font-size: 1.4rem;
+        padding: 0.8rem 0;
+      }
+      p {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+      }
+    }
+    .two {
+      grid-row: span 3;
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+    }
+    .three {
+      position: relative;
+      a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: red;
+        padding: 0.3rem;
+        color: #fff;
+      }
+    }
+    .four {
+      grid-row: span 2;
+      img{
+          width: 100px;
+          align-items: center;
+      }
+    }
+    .five {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: .1rem;
+        background: #5fb0d5;
+        color: #fff;
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+      p{
+        position: relative;
+        top: 1rem;
+        margin: 1rem 0;
+    }
+    }
+  }
+}
+
+
+
+
